@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"patrones","l":"MusicApp"},{"p":"patrones.modelo","l":"MusicPlayer"},{"p":"patrones.modelo","l":"ThirdPartyAudioPlayer"},{"p":"patrones.modelo","l":"TPAPaMPAdaptador"}];updateSearchResults();
