@@ -20,8 +20,8 @@ public class File extends FileSystemComponent{
 /**
      * Constructor de la clase
      *
-     * @params nombre del archivo, que le pide a la clase FileSystemComponent
-     * @params tamaño del archivo
+     * @param nombre del archivo, que le pide a la clase FileSystemComponent
+     * @param tamaño del archivo
      */
     public File(String nombre, int tamaño) {
        super(nombre);

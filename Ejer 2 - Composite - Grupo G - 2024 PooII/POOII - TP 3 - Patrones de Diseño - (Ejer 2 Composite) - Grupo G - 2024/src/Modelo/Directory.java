@@ -20,7 +20,7 @@ public class Directory extends FileSystemComponent {
     /**
      * Constructor de la clase
      *
-     * @params nombre del directorio, que le pide a la clase FileSystemComponent
+     * @param nombre del directorio, que le pide a la clase FileSystemComponent
      */
     public Directory(String nombre) {
 
