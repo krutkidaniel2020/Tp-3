@@ -7,6 +7,7 @@ package patrones.modelo;
 /**
  * Interface que representa a nuevas funciones del reproductor
  * @author Grupo G
+ * @version 1.0
  */
 public interface MusicPlayer {
 

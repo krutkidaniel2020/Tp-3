@@ -1,41 +1,55 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package Modelo;
 
 /**
+ * Clase que representa al Archivo File
  *
- * @author Daniel K
+ * @author Grupo G
+ * @version 1.0
  */
-public class File {
-    String nombre;
-    byte tamaño;
-
+public class File extends FileSystemComponent{
+ /**
+     * tamaño del archivo
+     */
+    int tamaño;
+ /**
+     * Constructor vacio de la clase file
+     */
     public File() {
     }
-
-    public File(String nombre, byte tamaño) {
-        this.nombre = nombre;
+/**
+     * Constructor de la clase
+     *
+     * @params nombre del archivo, que le pide a la clase FileSystemComponent
+     * @params tamaño del archivo
+     */
+    public File(String nombre, int tamaño) {
+       super(nombre);
         this.tamaño = tamaño;
     }
 
-    public String getNombre() {
-        return nombre;
-    }
 
-    public byte getTamaño() {
+ /**
+     * Obtiene el tamaño del archivo
+     * @return tamaño del archivo
+     */
+    public int getTamaño() {
         return tamaño;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
-
-    public void setTamaño(byte tamaño) {
+ /**
+     * Establece el tamaño del archivo
+     * @param  tamaño del archivo
+     */
+    public void setTamaño(int tamaño) {
         this.tamaño = tamaño;
     }
-    
-    
+    /**
+     * Metodo para mostrar los detalles de un archivo
+     */
+    @Override
+    public void showDetails() {
+        System.out.println("Archivo: " + nombre + " (Tamaño: " + tamaño + " bytes)");
+    }
     
 }

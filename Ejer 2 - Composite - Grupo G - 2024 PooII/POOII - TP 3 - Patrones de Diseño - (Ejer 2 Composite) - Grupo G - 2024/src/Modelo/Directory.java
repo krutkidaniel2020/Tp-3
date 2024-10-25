@@ -1,24 +1,59 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package Modelo;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
+ * Clase que representa al directorio
  *
- * @author Daniel K
+ * @author Grupo G
+ * @version 1.0
  */
-public class Directory{
-    
-FileSystemComponent[] unaLista;
+public class Directory extends FileSystemComponent {
 
-    public FileSystemComponent[] getUnaLista() {
-        return unaLista;
+    /**
+     * lista de directorios
+     */
+    private List<FileSystemComponent> lista = new ArrayList<>();
+
+    /**
+     * Constructor de la clase
+     *
+     * @params nombre del directorio, que le pide a la clase FileSystemComponent
+     */
+    public Directory(String nombre) {
+
+        super(nombre);
     }
 
-    public void setUnaLista(FileSystemComponent[] unaLista) {
-        this.unaLista = unaLista;
+    /**
+     * Metodo para agregar un directorio de la lista
+     *
+     * @param direc nombre del directorio a agregar
+     */
+    public void addComponent(FileSystemComponent direc) {
+        lista.add(direc);
     }
-    
-    
+
+    /**
+     * Metodo para eliminar un directorio de la lista
+     *
+     * @param direc nombre del directorio a borrar
+     */
+    public void removeComponent(FileSystemComponent direc) {
+        lista.remove(direc);
+    }
+
+    /**
+     * Metodo para mostrar la lista de los dir con sus nombres
+     */
+    @Override
+    public void showDetails() {
+        System.out.println("Directorio: " + nombre);
+        for (FileSystemComponent lis : lista) {
+            lis.showDetails();
+        }
+    }
+
 }
