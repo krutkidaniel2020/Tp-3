@@ -12,11 +12,11 @@ package Modelo;
 public class VainillaCake extends Cake{
     
     protected void prepareIngredients() {
-        System.out.println("Preparando ingredientes para pastel de vainilla...");
+        System.out.println("Preparando  pastel de vainilla...");
     }
 
     
     protected void decorateCake() {
-        System.out.println("Decorando pastel de vainilla con crema batida.");
+        System.out.println("Decorando vainilla con crema batida.");
     }
 }
