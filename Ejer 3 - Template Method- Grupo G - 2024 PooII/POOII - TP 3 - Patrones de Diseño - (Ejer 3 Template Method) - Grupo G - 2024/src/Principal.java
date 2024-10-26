@@ -3,21 +3,17 @@ import Modelo.Cake;
 import Modelo.ChocolateCake;
 import Modelo.VainillaCake;
 
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
-
 /**
- *
- * @author Usuario
+ * Clase que representa la app principal del sistema
+ * @author Grupo G POO II 2024
+ * @version 1.0
  */
 public class Principal {
 
-    /**
-     * @param args the command line arguments
+  /**
+     * Método principal de la aplicación
+     *
+     * @param args Argumentos de la línea de comandos
      */
     public static void main(String[] args) {
        Cake chocolateCake = new ChocolateCake();
