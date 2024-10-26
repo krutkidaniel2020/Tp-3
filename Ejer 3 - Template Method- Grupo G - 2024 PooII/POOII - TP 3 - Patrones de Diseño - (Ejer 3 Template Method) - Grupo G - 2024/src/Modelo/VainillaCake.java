@@ -17,6 +17,6 @@ public class VainillaCake extends Cake{
 
     
     protected void decorateCake() {
-        System.out.println("Decorando vainilla con crema batida.");
+        System.out.println("Decorando vainilla.");
     }
 }

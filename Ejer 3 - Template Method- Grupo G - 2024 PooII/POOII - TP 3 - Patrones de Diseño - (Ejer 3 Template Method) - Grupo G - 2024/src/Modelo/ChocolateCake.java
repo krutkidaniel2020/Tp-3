@@ -12,11 +12,11 @@ package Modelo;
 public class ChocolateCake extends Cake{
    
     protected void prepareIngredients() {
-        System.out.println("Preparando ingredientes para pastel de chocolate...");
+        System.out.println("Preparando chocolate cake...");
     }
 
    
     protected void decorateCake() {
-        System.out.println("Decorando pastel de chocolate con ganache.");
+        System.out.println("Decorando pastel.");
     }
 }
